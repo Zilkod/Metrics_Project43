@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Settings</title>
+		<link href="../../assets/styles/common.css" rel="stylesheet" type="text/css"/>
+		<link href="settings.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<form>
+			<h1>Settings</h1>
+
+			<h3>Units</h3>
+			<span><label for="px">Use px:</label><input type="radio" value="px" id="px" name="unit"></span>
+			<span><label for="em">Use em:</label><input type="radio" value="em" id="em" name="unit"></span>
+			<span><label for="size">Size:</label><input id="size" type="number" name="size" placeholder="16px"></span>
+
+			<h3>Default Theme</h3>
+			<p>Select the theme to use when linear is launched.</p>
+			<select id="defaultTheme">
+				<!-- options will be injected here -->
+			</select>
+			<a href="#" id="update-all-themes">Apply theme to all open rulers</a>
+		</form>
+		<script src="settings.js" charset="utf-8"></script>
+	</body>
+</html>
